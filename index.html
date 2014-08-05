@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp" ng-controller="mainCtrl">
+    <head >
+        <base href="/ng-test-example/">
+        <title>Angular Base</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>        
+        
+    </head>
+    <body>
+        <div menu-directive></div>
+        <div class="container" ng-view="">
+            
+            <div >{{message}}</div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-route.js"></script>
+
+        
+        <script type="text/javascript" src="scripts/app.js"></script>     
+        <script type="text/javascript" src="scripts/mainCtrl.js"></script>        
+        <script type="text/javascript" src="scripts/welcomeCtrl.js"></script>        
+        <script type="text/javascript" src="scripts/someOtherCtrl.js"></script>        
+        <script type="text/javascript" src="scripts/menuDirective.js"></script>        
+
+    </body>
+
+</html>
