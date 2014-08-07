@@ -2,7 +2,7 @@
 
 <html ng-app="myApp" ng-controller="mainCtrl">
     <head >
-        <base href="/ng-test-example/">
+        <base href="/ng-basic/">
         <title>Angular Base</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,11 @@
         
     </head>
     <body>
-        <div menu-directive></div>
-        <div class="container" ng-view="">
-            
-            <div >{{message}}</div>
+        <div class="container">
+            <menu-directive  items="menuItems"></menu-directive>
         </div>
+        
+        <div class="container" ng-view=""></div>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-route.js"></script>
 
@@ -26,6 +26,8 @@
         <script type="text/javascript" src="scripts/welcomeCtrl.js"></script>        
         <script type="text/javascript" src="scripts/someOtherCtrl.js"></script>        
         <script type="text/javascript" src="scripts/menuDirective.js"></script>        
+        <script type="text/javascript" src="scripts/menuItemDirective.js"></script>        
+        <script type="text/javascript" src="scripts/menuSubMenuDirective.js"></script>        
 
     </body>
 

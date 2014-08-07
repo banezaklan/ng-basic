@@ -1,0 +1,6 @@
+<li ng-class="{active: item.selected, dropdown: item.subItems.length>0}">
+    <a ng-href="{{item.url}}" ng-click="selectMenuItem(item)" ng-class="{'dropdown-toggle': item.subItems.length>0}" data-toggle="dropdown">
+        {{item.label}} <span class="caret" ng-hide="item.subItems.length===0"></span>
+    </a>
+    <menu-sub-menu-directive items="item.subItems" ></menu-sub-menu-directive>
+</li>
